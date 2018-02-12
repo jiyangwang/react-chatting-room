@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root, .container {
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+}
+
+/* Login Page */
+
+.app h1 {
+  text-align: center;
+}
+
+.user-name input[type="text"] {
+  display: block;
+  margin: auto;
+  border: 1px solid #dee0e0;
+  padding: 0 20px;
+  height: 50px;
+  width: 50%;
+  font: 400 1rem 'Roboto', sans-serif;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.user-name input[type="text"]:focus {
+  border: 1px solid #AF9570;
+  outline: none !important;
+}
+
+.user-name input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 80px;
+  border: none;
+  font: 700 1rem 'Roboto', sans-serif;
+  cursor: pointer;
+  background-color: #323232;
+  color: white;
+  -webkit-box-shadow: 0 7px 10px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 7px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 7px 10px rgba(0,0,0,0.15);
+  -webkit-transition: font-size 0.3s ease-in-out;
+  -moz-transition: font-size 0.3s ease-in-out;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.user-name input[type="submit"]:hover {
+  font-size: 1.1rem;
+}
+
+/* MessageInput */
+
+.message-input input[type="text"] {
+  display: block;
+  margin: auto;
+  border: 1px solid #dee0e0;
+  padding: 0 20px;
+  height: 50px;
+  width: 50%;
+  font: 400 1rem 'Roboto', sans-serif;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  -webkit-transition: border-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}

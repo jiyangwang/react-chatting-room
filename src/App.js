@@ -9,7 +9,6 @@ class App extends Component {
     this.state = {
       username: '',
       login: false,
-      messages: [],
     };
 
     this.onChangeUserName = this.onChangeUserName.bind(this);
@@ -26,25 +25,30 @@ class App extends Component {
   }
 
   render() {
-    const { login, messages } = this.state
+    const { login, username } = this.state
+    const disabled = !username || !username.length
 
     if (login) {
-      return <Chat messages={messages} />
+      return (
+        <div className='app'>
+          <h1>React Chatting Room</h1>
+          <Chat username={username} />  
+        </div>
+      );
     }
 
     return (
-      <form className='user-name' onSubmit={this.onSubmitUserName}>
+      <div className='app'>
         <h1>React Chatting Room</h1>
-        <div>
-          <input 
-            type='text'
-            onChange={this.onChangeUserName}
-            placeholder='Enter your name...'
-            require='true'
-          />
-          <input type='submit' value='Submit' />
-        </div>
-      </form>
+        <form className='user-name' onSubmit={this.onSubmitUserName}>
+            <input
+              type='text'
+              onChange={this.onChangeUserName}
+              placeholder='Please enter your name...'
+            />
+            <input type='submit' disabled={disabled} value='Submit' />
+        </form>
+      </div>  
     );
   }
 }

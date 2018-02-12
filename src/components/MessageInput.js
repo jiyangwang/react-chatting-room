@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 export default class MessageInput extends React.Component {
   constructor() {
@@ -31,7 +32,7 @@ export default class MessageInput extends React.Component {
           value={input}
           placeholder='Type someting here...'
           required='true'
-        />  
+        />   
       </form>
     );
   }
