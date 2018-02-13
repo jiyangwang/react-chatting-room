@@ -15,10 +15,22 @@ html, body, #root, .container {
 /* Login Page */
 
 .app h1 {
+  position: relative;
   text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  background-color: #eee;
 }
 
-.user-name input[type="text"] {
+.login {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  left: 0;
+}
+
+.login input[type="text"] {
   display: block;
   margin: auto;
   border: 1px solid #dee0e0;
@@ -34,12 +46,12 @@ html, body, #root, .container {
   transition: border-color 0.2s ease-in-out;
 }
 
-.user-name input[type="text"]:focus {
+.login input[type="text"]:focus {
   border: 1px solid #AF9570;
   outline: none !important;
 }
 
-.user-name input[type="submit"] {
+.login input[type="submit"] {
   display: block;
   margin: 20px auto;
   padding: 20px 80px;
@@ -56,7 +68,7 @@ html, body, #root, .container {
   transition: font-size 0.3s ease-in-out;
 }
 
-.user-name input[type="submit"]:hover {
+.login input[type="submit"]:hover {
   font-size: 1.1rem;
 }
 

@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className='app'>
         <h1>React Chatting Room</h1>
-        <form className='user-name' onSubmit={this.onSubmitUserName}>
+        <form className='login' onSubmit={this.onSubmitUserName}>
             <input
               type='text'
               onChange={this.onChangeUserName}

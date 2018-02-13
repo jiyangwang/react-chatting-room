@@ -36,7 +36,7 @@ export default class Chat extends React.Component {
     // Emit the message to the server
     this.socket.emit('client:message', messageObject);
 
-    messageObject.tome = 'tome';
+    messageObject.me = true;
     this.addMessage(messageObject);
   }
 
@@ -52,7 +52,7 @@ export default class Chat extends React.Component {
       return (
         <Message 
           key={idx}
-          tome={message.tome}
+          me={message.me}
           username={message.username}
           message={message.message}
         />
