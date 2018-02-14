@@ -13,7 +13,6 @@ html, body, #root, .container {
 }
 
 /* Login Page */
-
 .app h1 {
   position: relative;
   text-align: center;
@@ -72,8 +71,54 @@ html, body, #root, .container {
   font-size: 1.1rem;
 }
 
-/* MessageInput */
+/* Chat */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
 
+.message-list {
+  padding: 20px;
+}
+
+/* Message */
+.message.me {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.message.tome {
+  margin-bottom: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.message.me .user-name {
+  display: none;  
+}
+
+.message-body {
+  display: inline-block;
+  max-width: 80%;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.message.me .message-body {
+  background-color: #0072C6;
+  color: white;
+}
+
+/* MessageInput */
 .message-input input[type="text"] {
   display: block;
   margin: auto;

@@ -22,11 +22,6 @@ export default class Chat extends React.Component {
     });
   }
 
-  componentDidMount() {
-    const messageList = document.getElementsByClassName('message-list')
-    messageList.scrollTop = messageList.scrollHeight;
-  }
-
   onSend(message) {
     const messageObject = {
       username: this.props.username,
